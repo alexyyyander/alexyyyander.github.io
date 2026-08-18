@@ -130,6 +130,48 @@ em {
   margin-top: 6px;
 }
 
+.project-card {
+  border: 1px solid var(--rule);
+  border-left: 4px solid var(--link);
+  border-radius: 6px;
+  padding: 20px;
+  margin: 16px 0;
+  background: var(--soft);
+}
+
+.project-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+}
+
+.project-card p {
+  margin: 0 0 8px;
+}
+
+.project-card .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.project-links {
+  margin-top: 10px;
+}
+
+.project-links a {
+  display: inline-block;
+  margin-right: 12px;
+  padding: 5px 12px;
+  border: 1px solid var(--link);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.project-links a:hover {
+  background: var(--link);
+  color: #fff;
+}
+
 strong {
   font-weight: 700;
 }
