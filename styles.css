@@ -75,6 +75,20 @@ h3 {
   font-weight: 700;
 }
 
+h3:not(.project-card h3) {
+  margin: 24px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+h4 {
+  margin: 0 0 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 p {
   margin: 0 0 12px;
 }
@@ -139,7 +153,8 @@ em {
   background: var(--soft);
 }
 
-.project-card h3 {
+.project-card h3,
+.project-card h4 {
   margin: 0 0 6px;
   font-size: 1.1rem;
 }
