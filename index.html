@@ -1,278 +1,203 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>俞阳阳 | Alex Yu</title>
-    <meta
-      name="description"
-      content="俞阳阳的个人主页：AI Agent、具身智能视频理解、大模型应用与产品创业。"
-    >
+    <title>Alex Yu · AI Agents, Formal Mathematics &amp; Open Source</title>
+    <meta name="description" content="Alex Yu (俞阳阳 / Yangyang Yu) builds AI agents and verifiable research tools. Explore Proofweave, open-source projects, and research in multimodal AI and agent memory.">
     <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://alexyyyander.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alex Yu · AI Agents, Formal Mathematics &amp; Open Source">
+    <meta property="og:description" content="Building AI agents and verifiable research tools. Selected projects, open-source contributions, and research by Alex Yu.">
+    <meta property="og:url" content="https://alexyyyander.github.io/">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="page" id="main">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header wrap">
+      <a class="wordmark" href="#main" aria-label="Alex Yu, home">AY<span aria-hidden="true">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#research">Research</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-github" href="https://github.com/alexyyyander">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+    <main class="wrap" id="main">
       <section class="intro" aria-labelledby="name">
         <div class="intro-text">
-          <h1 id="name">俞阳阳 <span>Yangyang Yu</span></h1>
-          <p>
-            I recently graduated from Tsinghua University with a B.S. in Information
-            and Computing Sciences. I work on AI agents, embodied and edge AI,
-            multimodal LLM evaluation, long-term memory, and AI products that move
-            from research prototypes to real users. Currently exploring AI4Math
-            architecture for formal mathematical reasoning and proof verification.
-          </p>
-          <p>
-            我曾在清华大学人工智能研究院参与大模型与具身智能方向研究，是
-            <em>VidEgoThink</em> 的第三作者；也在 HerOS 早期探索、
-            TechVoyage（汤问致新）、华为灵犀实验室中实践过
-            Agent 架构、长期记忆、RAG、后端部署、软硬件协同与产品定义。目前探索
-            AI4Math 架构，研究形式化数学推理与证明验证。
-          </p>
-          <p class="links">
-            <a href="mailto:yu-yy21@mails.tsinghua.edu.cn">Email</a>
-            <span>/</span>
-            <a href="#research">Research</a>
-            <span>/</span>
-            <a href="#publications">Publications</a>
-            <span>/</span>
-            <a href="#thesis">Thesis</a>
-            <span>/</span>
-            <a href="#projects">Projects</a>
-            <span>/</span>
-            <a href="#experience">Experience</a>
-            <span>/</span>
-            <a href="#honors">Honors</a>
-          </p>
+          <p class="eyebrow">AI agents · Formal mathematics · Open source</p>
+          <h1 id="name">Alex Yu <span lang="zh-CN">俞阳阳</span></h1>
+          <p class="intro-lead">Building agents that turn ideas<br class="desktop-break"> into working, verifiable systems.</p>
+          <p class="intro-bio">I’m Yangyang Yu, a Tsinghua University graduate in Information and Computing Sciences. I build AI products and research tools, with a focus on agent memory, multimodal intelligence, and formal mathematics.</p>
+          <p class="intro-zh" lang="zh-CN">从多模态与具身智能研究，到 Agent 产品与开源工具。目前主要构建 Proofweave，探索如何让 AI 参与的数学研究可复现、可验证。</p>
+          <div class="intro-links">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="https://github.com/alexyyyander">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="mailto:yu-yy21@qq.com">Email <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
-        <img
-          class="portrait"
-          src="assets/profile-waterfall.jpg"
-          width="190"
-          height="230"
-          alt="Yangyang Yu by a waterfall"
-        >
+        <figure class="portrait-block">
+          <img class="portrait" src="assets/profile-waterfall.jpg" width="190" height="230" alt="Yangyang Yu standing by a waterfall" fetchpriority="high">
+          <figcaption>Yangyang Yu / Alex Yu<br>Tsinghua University · B.S., 2026</figcaption>
+        </figure>
       </section>
 
-      <section id="research" aria-labelledby="research-title">
-        <h2 id="research-title">Research Interests</h2>
-        <p>
-          My current research and engineering interests include multimodal large
-          language models, egocentric video understanding for embodied AI,
-          edge-optimized agents, memory-augmented reasoning, efficient fine-tuning,
-          and human-facing AI systems. I also work on formal verification of
-          mathematical theories, continuing Teichmüller's unified program through
-          Lean 4 formalization and multi-agent collaborative exploration.
-        </p>
-      </section>
-
-      <section id="publications" aria-labelledby="pub-title">
-        <h2 id="pub-title">Selected Publications</h2>
-        <div class="paper">
-          <p class="paper-title">
-            VidEgoThink: Assessing Egocentric Video Understanding Capabilities for Embodied AI
-          </p>
-          <p class="authors">Sijie Cheng, Kechen Fang, <strong>Yangyang Yu</strong>, et al.</p>
-          <p class="venue">arXiv preprint, 2024. Third author.</p>
-          <p>
-            A benchmark and evaluation study for assessing egocentric video
-            understanding capabilities in embodied AI settings.
-          </p>
-          <p class="paper-links">
-            <a href="https://arxiv.org/abs/2410.11623" target="_blank" rel="noreferrer">arXiv</a>
-          </p>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">01 / Building</p><h2 id="projects-title">Selected projects</h2></div>
+          <a class="text-link" href="https://github.com/alexyyyander?tab=repositories">All repositories <span aria-hidden="true">↗</span></a>
         </div>
-      </section>
-
-      <section id="thesis" aria-labelledby="thesis-title">
-        <h2 id="thesis-title">Undergraduate Thesis</h2>
-        <div class="item">
-          <h3>RL-G-Memory: Cold-start & Adaptive Optimization of Multi-Agent Memory via Reinforcement Learning</h3>
-          <p class="meta">Tsinghua University · 2026</p>
-          <p>
-            Studied memory control for multi-agent systems through a two-stage
-            framework that combines supervised cold-start training with staged GRPO
-            optimization. Evaluated on FEVER, HotpotQA, and SciWorld, the work
-            focuses on when agents should retrieve memory rather than simply
-            retrieving more.
-          </p>
+        <article class="featured-project" aria-labelledby="proofweave-title">
+          <div class="featured-copy">
+            <p class="project-category">Featured · Formal mathematics</p>
+            <h3 id="proofweave-title">Proofweave</h3>
+            <p class="project-tagline">A research agent’s work should be checkable.</p>
+            <p>A network for personally delegated mathematical research. Private reasoning stays in a local Lean workspace; selected results become signed evidence that others can inspect and reproduce.</p>
+            <p class="project-detail">Built around scoped agent delegation, isolated Lean replay, and attributable contribution receipts.</p>
+            <ul class="tags" aria-label="Proofweave technologies"><li>Lean 4</li><li>OAuth / MCP</li><li>Signed evidence</li></ul>
+            <div class="project-links">
+              <a class="button button-light" href="https://proofweave-research.yualex031821.chatgpt.site/demo#verification-console">Try verification demo <span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/alexyyyander/proofweave">Source code <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <aside class="featured-evidence" aria-label="Explore Proofweave">
+            <p class="evidence-label">Explore the evidence</p>
+            <a class="evidence-link" href="https://proofweave-research.yualex031821.chatgpt.site/explore"><span class="evidence-number">01</span><span><strong>Research frontier</strong><small>Source-pinned mathematical targets</small></span><span aria-hidden="true">↗</span></a>
+            <a class="evidence-link" href="https://proofweave-research.yualex031821.chatgpt.site/demo#verification-console"><span class="evidence-number">02</span><span><strong>Verification console</strong><small>Inspect checks and a tamper test</small></span><span aria-hidden="true">↗</span></a>
+            <a class="evidence-link" href="https://proofweave-research.yualex031821.chatgpt.site/receipts"><span class="evidence-number">03</span><span><strong>Contribution receipts</strong><small>Inspect signatures and attribution</small></span><span aria-hidden="true">↗</span></a>
+            <p class="evidence-note">Public reference demo · Research writes are in controlled alpha. The demo verifies a fixed evidence fixture.</p>
+          </aside>
+        </article>
+        <div class="project-grid">
+          <article class="project-card" aria-labelledby="mixxx-title">
+            <p class="project-category">Agent tooling / Audio</p>
+            <h3 id="mixxx-title">Mixxx API Bridge</h3>
+            <p>Give AI clients a reliable control interface to a real DJ engine. An HTTP/MIDI sidecar translates commands into Mixxx controls and returns acknowledgements and state feedback.</p>
+            <p class="project-detail">Keeps intent orchestration separate from audio execution. Includes a documented control round trip on Mixxx 2.5.6.</p>
+            <ul class="tags" aria-label="Mixxx API Bridge technologies"><li>Python</li><li>HTTP / MIDI</li><li>CoreMIDI</li></ul>
+            <div class="project-links"><a href="https://github.com/alexyyyander/mixxx-api-bridge">Repository <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/mixxx-api-bridge#end-to-end-verification">Verification notes <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" aria-labelledby="defense-title">
+            <p class="project-category">Agent safety / Developer tools</p>
+            <h3 id="defense-title">Prompt Injection Defense</h3>
+            <p>A small, dependency-free toolkit for screening common prompt-injection signals, with advisory agent policies, Python helpers, and regression tests.</p>
+            <p class="project-detail">Covers direct, encoded, and Unicode-evasion patterns. Heuristic screening complements host-enforced security controls.</p>
+            <ul class="tags" aria-label="Prompt Injection Defense technologies"><li>Python</li><li>Agent skills</li><li>Heuristics</li></ul>
+            <div class="project-links"><a href="https://github.com/alexyyyander/prompt-injection-defense">Repository <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/prompt-injection-defense#quickstart--2-ways-to-load">Quickstart <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" aria-labelledby="teichmuller-title">
+            <p class="project-category">AI for mathematics / Research in progress</p>
+            <h3 id="teichmuller-title">Teichmüller’s Unified Program</h3>
+            <p>Connecting complex geometry, topology, and moduli theory through structured tutorials and explicit mathematical interfaces in Lean 4.</p>
+            <p class="project-detail">Includes selected Mathlib-backed components for charts, families, and descent. Formalization of the full theory remains in progress.</p>
+            <ul class="tags" aria-label="Teichmüller project technologies"><li>Lean 4</li><li>Mathlib</li><li>LaTeX</li></ul>
+            <div class="project-links"><a href="https://alexyyyander.github.io/teichmuller-tutorial/">Read tutorials <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/teichmuller-tutorial">Repository <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <article class="project-card" aria-labelledby="evidverse-title">
+            <p class="project-category">Creative tools / Product prototype</p>
+            <h3 id="evidverse-title">Evidverse</h3>
+            <p>Git-style version history for AI video creation. Explore alternate edits with timeline snapshots, branches, and a visual project history.</p>
+            <p class="project-detail">Combines a web editor with asynchronous generation workflows and a CLI. Source and local setup are available.</p>
+            <ul class="tags" aria-label="Evidverse technologies"><li>Next.js</li><li>FastAPI</li><li>Celery</li></ul>
+            <div class="project-links"><a href="https://github.com/alexyyyander/Evidverse">Repository <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/Evidverse#-quick-start">Local setup <span aria-hidden="true">↗</span></a></div>
+          </article>
         </div>
-      </section>
-
-      <section id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
-
-        <h3>AI4Math: Formal Mathematical Reasoning</h3>
-
-        <div class="item">
-          <h4>Teichmüller's Unified Program</h4>
-          <p class="meta">Formal Mathematics · Lean 4 · Multi-agent Exploration · 2026 - Present</p>
-          <p>
-            Continuing Oswald Teichmüller's 1944 unified program for variable Riemann
-            surfaces. Combines LaTeX tutorials, Lean 4 formalization, and collaborative
-            AI agent exploration with rigorous review. Restores the Göttingen school's
-            legacy in complex geometry, topology, and moduli theory.
-          </p>
-          <p class="paper-links">
-            <a href="https://alexyyyander.github.io/teichmuller-tutorial/" target="_blank" rel="noreferrer">Tutorial</a>
-            <a href="https://github.com/alexyyyander/teichmuller-tutorial" target="_blank" rel="noreferrer">GitHub</a>
-          </p>
-        </div>
-
-        <div class="item">
-          <h4>ProofWeave</h4>
-          <p class="meta">Verifiable Formal Mathematics · Distributed Research · 2026 - Present</p>
-          <p>
-            A verifiable network for personally delegated formal mathematics research.
-            Enables distributed collaborative theorem proving with cryptographic
-            verification of research contributions and proof chains.
-          </p>
-          <p class="paper-links">
-            <a href="https://github.com/alexyyyander/proofweave" target="_blank" rel="noreferrer">GitHub</a>
-          </p>
-        </div>
-
-        <h3>Other Projects</h3>
-
-        <div class="item">
-          <h3>HerOS 个性化护肤 Agent（早期项目）</h3>
-          <p class="meta">Early-stage Product Exploration · MemoryBase · 2025.08 - Present</p>
-          <p>
-            Explore algorithm prototypes for a personalized skincare agent with
-            intent routing, dual-layer memory, multi-source data fusion, and
-            privacy-aware longitudinal skin data management. The project also
-            studies how smart-mirror image capture and user feedback can support
-            low-friction skincare decisions.
-          </p>
-        </div>
-
-        <div class="item">
-          <h3>TechVoyage（汤问致新）角色化 AI Agent 与陪伴机器人系统</h3>
-          <p class="meta">Co-Founder & Head of Large Model Technology · Long-term Memory · 2024.10 - Present</p>
-          <p>
-            Lead the technical roadmap for character-based AI agents and companion
-            robot products. Built virtual-human systems with long-term memory,
-            emotional simulation, personalized conversation, prompt engineering,
-            vector database integration, and backend deployment. Secured MiraclePlus
-            seed funding and iterated MVP prototypes through user testing.
-          </p>
-        </div>
-
-        <!-- <div class="item">
-          <h3>简单志愿 AI 志愿填报助手</h3>
-          <p class="meta">AI Agent · Full-stack Development · Product Design · 2025.05 - 2025.08</p>
-          <p>
-            Designed and developed an AI-powered college application recommendation
-            system for Chinese Gaokao students. The system combined scores,
-            preferences, university policies, and interactive consultation. The
-            internal beta attracted 1000+ students and parents during the 2025
-            application season.
-          </p>
-        </div> -->
-
-        <div class="item">
-          <h3>大模型 Agent 与高效微调研究</h3>
-          <p class="meta">Tsinghua AIR · SFT / LoRA · Agent Reasoning · 2023.06 - 2024.06</p>
-          <p>
-            Worked as an undergraduate research assistant on LLM agents, context
-            length extension, efficient fine-tuning, and memory mechanisms.
-            Contributed to experiment implementation, data organization, ablation
-            analysis, and paper writing for projects including <em>VidEgoThink</em>.
-          </p>
+        <div class="open-source-notes">
+          <article>
+            <p class="project-category">Open-source contribution</p>
+            <h3>OpenClaw <span class="status-label">Merged PR</span></h3>
+            <p>Fixed TUI messages being routed to Discord DMs instead of the terminal interface.</p>
+            <a class="text-link" href="https://github.com/openclaw/openclaw/pull/35321">Read contribution #35321 <span aria-hidden="true">↗</span></a>
+          </article>
+          <article>
+            <p class="project-category">Companion repository</p>
+            <h3>Proofweave Open Catalog</h3>
+            <p>Auditable, source-pinned formal mathematics targets and standards for reviewing research frontiers.</p>
+            <a class="text-link" href="https://github.com/alexyyyander/proofweave-open-catalog">Explore the catalog <span aria-hidden="true">↗</span></a>
+          </article>
         </div>
       </section>
 
-      <section id="experience" aria-labelledby="experience-title">
-        <h2 id="experience-title">Experience</h2>
-        <div class="item">
-          <h3>Shenzhen Institute of Innovation and Entrepreneurship</h3>
-          <p class="meta">2025 Fall Camp Fellow · 2025.08</p>
-          <p>
-            Studied consumer product logic, user research, pain-point discovery,
-            product design, and team collaboration.
-          </p>
-        </div>
+      <section class="section" id="research" aria-labelledby="research-title">
+        <div class="section-heading"><div><p class="eyebrow">02 / Research</p><h2 id="research-title">Understanding how agents think &amp; act</h2></div></div>
+        <p class="section-intro">My research spans egocentric video understanding, multimodal LLM evaluation, memory-augmented reasoning, efficient fine-tuning, and formal mathematical verification.</p>
+        <article class="research-row" id="publications" aria-labelledby="pub-title">
+          <div class="row-label">Publication<span>2024 · arXiv preprint</span></div>
+          <div>
+            <h3 id="pub-title">VidEgoThink: Assessing Egocentric Video Understanding Capabilities for Embodied AI</h3>
+            <p class="authors">Sijie Cheng, Kechen Fang, <strong>Yangyang Yu</strong>, et al. · Third author</p>
+            <p>A benchmark connecting first-person video understanding to embodied AI through video question answering, hierarchical planning, visual grounding, and reward modeling.</p>
+            <a class="text-link" href="https://arxiv.org/abs/2410.11623">Read the paper <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="research-row" id="thesis" aria-labelledby="thesis-title">
+          <div class="row-label">Undergraduate thesis<span>2026 · Tsinghua University</span></div>
+          <div>
+            <h3 id="thesis-title">RL-G-Memory: Cold-start &amp; Adaptive Optimization of Multi-Agent Memory via Reinforcement Learning</h3>
+            <p>Studied when agents should retrieve memory through supervised cold-start training and staged GRPO optimization, with evaluation on FEVER, HotpotQA, and SciWorld.</p>
+            <ul class="tags" aria-label="Thesis research areas"><li>Agent memory</li><li>Reinforcement learning</li><li>Multi-agent systems</li></ul>
+          </div>
+        </article>
+      </section>
 
-        <div class="item">
-          <h3>Huawei Linxi Lab</h3>
-          <p class="meta">LLM AI Engineer Intern · 2024.07 - 2024.10</p>
-          <p>
-            Worked on multimodal LLM application development and optimized
-            knowledge extraction pipelines for unstructured instructional data.
-            Integrated RAG-style context retrieval and collaborated on enterprise AI
-            deployment workflows.
-          </p>
-        </div>
-
-        <div class="item">
-          <h3>Course Research Committee, Department of Computer Science, Tsinghua University</h3>
-          <p class="meta">Research Member · 2022.08 - 2024.06</p>
-          <p>
-            Participated in curriculum reform research for 10+ CS courses. Designed
-            questionnaires, interviewed students, analyzed feedback with Python, and
-            contributed to curriculum optimization proposals adopted by the department.
-          </p>
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading"><div><p class="eyebrow">03 / Experience</p><h2 id="experience-title">From research to real products</h2></div></div>
+        <div class="experience-list">
+          <article class="experience-row">
+            <p class="row-label">Product exploration<span>2025.08 – Present</span></p>
+            <div><h3>HerOS <span lang="zh-CN">· 个性化护肤 Agent</span></h3><p class="meta">Early-stage project · MemoryBase</p><p>Exploring intent routing, dual-layer memory, multi-source data fusion, and privacy-aware skin data management. Studying smart-mirror capture and user feedback for personalized skincare decisions.</p></div>
+          </article>
+          <article class="experience-row">
+            <p class="row-label">Co-Founder<span>2024.10 – Present</span></p>
+            <div><h3>TechVoyage <span lang="zh-CN">· 汤问致新</span></h3><p class="meta">Head of Large Model Technology</p><p>Building character-based agents and companion robot systems with long-term memory, personalized conversation, and backend deployment. The team secured MiraclePlus seed funding and iterated MVPs through user testing.</p></div>
+          </article>
+          <article class="experience-row">
+            <p class="row-label">Engineering internship<span>2024.07 – 2024.10</span></p>
+            <div><h3>Huawei Linxi Lab</h3><p class="meta">LLM AI Engineer Intern</p><p>Developed multimodal LLM applications and knowledge extraction pipelines for unstructured instructional data, integrating context retrieval and enterprise deployment workflows.</p></div>
+          </article>
+          <article class="experience-row">
+            <p class="row-label">Undergraduate research<span>2023.06 – 2024.06</span></p>
+            <div><h3>Tsinghua AIR</h3><p class="meta">LLM agents · Efficient fine-tuning · Embodied AI</p><p>Worked on context extension, SFT/LoRA, and memory mechanisms. Contributed experiments, data preparation, ablations, and paper writing, including work on <em>VidEgoThink</em>.</p></div>
+          </article>
         </div>
       </section>
 
-      <section aria-labelledby="activities-title">
-        <h2 id="activities-title">Activities</h2>
-        <div class="item">
-          <h3>Tsinghua University Overseas Practice Program, Chile</h3>
-          <p class="meta">Field Research · 2023.06 - 2023.07</p>
-          <p>
-            Conducted field research on indigenous cultural preservation and
-            environmental sustainability. Worked with local organizations through
-            interviews, participatory workshops, and policy-report writing.
-          </p>
+      <section class="section background-section" aria-labelledby="background-title">
+        <div class="section-heading"><div><p class="eyebrow">04 / Background</p><h2 id="background-title">Education &amp; beyond</h2></div></div>
+        <div class="background-grid">
+          <div>
+            <article id="education">
+              <h3>Tsinghua University</h3>
+              <p class="meta">B.S. in Information and Computing Sciences<br>2021.09 – 2026.07</p>
+              <p>Foundations in mathematics, computer science, and neural networks.</p>
+              <p class="meta">Tsinghua University Special Scholarship</p>
+            </article>
+            <article id="honors">
+              <h3>Selected honors</h3>
+              <ul class="plain-list">
+                <li><strong>National Silver Award</strong><span>China International College Students’ Innovation Competition · 2024</span><p>IntelliCompanion, a multimodal desktop companion robot. Led cloud-edge AI architecture and prototype iterations.</p></li>
+                <li><strong>Zheng Gang Overseas Practice Scholarship</strong><span>Tsinghua University · 2023</span></li>
+              </ul>
+            </article>
+          </div>
+          <div>
+            <h3>Community &amp; fieldwork</h3>
+            <ul class="plain-list">
+              <li><strong>Shenzhen Institute of Innovation and Entrepreneurship</strong><span>Fall Camp Fellow · 2025.08</span><p>Consumer product design, user research, and team collaboration.</p></li>
+              <li><strong>Tsinghua CS Course Research Committee</strong><span>Research Member · 2022.08 – 2024.06</span><p>Student interviews and feedback analysis for 10+ CS courses; contributed proposals adopted by the department.</p></li>
+              <li><strong>Overseas Practice Program, Chile</strong><span>Field Research · 2023.06 – 2023.07</span><p>Indigenous cultural preservation and environmental sustainability through interviews, workshops, and policy-report writing.</p></li>
+            </ul>
+          </div>
         </div>
       </section>
-
-      <section id="honors" aria-labelledby="honors-title">
-        <h2 id="honors-title">Selected Honors</h2>
-        <div class="item">
-          <h3>National Silver Award, China International College Students' Innovation Competition</h3>
-          <p class="meta">Ministry of Education of China et al. · 2024.10</p>
-          <p>
-            Awarded for IntelliCompanion, a multimodal desktop companion robot
-            project. Led cloud-edge AI architecture and prototype iterations.
-          </p>
-        </div>
-
-        <div class="item">
-          <h3>Zheng Gang Overseas Practice Scholarship</h3>
-          <p class="meta">Tsinghua University · 2023.12</p>
-          <p>
-            Recognized overseas field research and cross-cultural practice work in
-            Chile.
-          </p>
-        </div>
-      </section>
-
-      <section aria-labelledby="education-title">
-        <h2 id="education-title">Education</h2>
-        <div class="item">
-          <h3>Tsinghua University</h3>
-          <p class="meta">B.S. in Information and Computing Sciences · 2021.09 - 2026.07</p>
-          <p>
-            Coursework includes mathematical analysis, linear algebra, probability,
-            discrete mathematics, mathematical programming, data structures,
-            operating systems, computer networks, object-oriented programming, and
-            artificial neural networks.
-          </p>
-          <p class="meta">Award: Tsinghua University Special Scholarship.</p>
-        </div>
-      </section>
-
-      <section aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <p>
-          For discussions about AI agents, embodied AI, LLM applications, product
-          building, or engineering projects, feel free to email me at
-          <a href="mailto:yu-yy21@qq.com">yu-yy21@qq.com</a> or 
-          <a href="mailto:yu-yy21@mails.tsinghua.edu.cn">yu-yy21@mails.tsinghua.edu.cn</a> 
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div><p class="eyebrow">Get in touch</p><h2 id="contact-title">Let’s build something useful.</h2><p>Open to conversations about AI agents, formal mathematics,<br class="desktop-break"> multimodal research, and thoughtful AI products.</p></div>
+        <div class="contact-links"><a href="mailto:yu-yy21@qq.com">yu-yy21@qq.com <span aria-hidden="true">↗</span></a><a href="mailto:yu-yy21@mails.tsinghua.edu.cn">yu-yy21@mails.tsinghua.edu.cn <span aria-hidden="true">↗</span></a></div>
       </section>
     </main>
+    <footer class="site-footer wrap"><p>© 2026 Alex Yu <span lang="zh-CN">俞阳阳</span></p><div><a href="https://github.com/alexyyyander">GitHub</a><a href="#main">Back to top ↑</a></div></footer>
   </body>
 </html>
