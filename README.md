@@ -31,7 +31,7 @@ Then visit <http://127.0.0.1:4318>.
 Edit project summaries and links in `index.html`. Keep status labels accurate:
 Proofweave has a public reference demo and controlled-alpha research writes;
 Teichmüller formalization is partial; the prompt-injection toolkit provides
-heuristic screening; Evidverse is presented as a product prototype.
+heuristic screening.
 
 Descriptions were checked against the public repositories on 2026-09-10:
 
@@ -39,8 +39,6 @@ Descriptions were checked against the public repositories on 2026-09-10:
 - [Mixxx API Bridge](https://github.com/alexyyyander/mixxx-api-bridge)
 - [Prompt Injection Defense](https://github.com/alexyyyander/prompt-injection-defense)
 - [Teichmüller’s Unified Program](https://github.com/alexyyyander/teichmuller-tutorial)
-- [Evidverse](https://github.com/alexyyyander/Evidverse)
-- [Proofweave Open Catalog](https://github.com/alexyyyander/proofweave-open-catalog)
 - [Merged OpenClaw contribution](https://github.com/openclaw/openclaw/pull/35321)
 - [VidEgoThink paper](https://arxiv.org/abs/2410.11623)
 
