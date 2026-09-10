@@ -72,13 +72,13 @@
           </aside>
         </article>
         <div class="project-grid">
-          <article class="project-card" aria-labelledby="mixxx-title">
-            <p class="project-category">Agent tooling / Audio</p>
+          <article class="project-card" id="mixxx" aria-labelledby="mixxx-title">
+            <p class="project-category">Open-source project / AI-assisted DJ tooling</p>
             <h3 id="mixxx-title">Mixxx API Bridge</h3>
-            <p>Give AI clients a reliable control interface to a real DJ engine. An HTTP/MIDI sidecar translates commands into Mixxx controls and returns acknowledgements and state feedback.</p>
-            <p class="project-detail">Keeps intent orchestration separate from audio execution. Includes a documented control round trip on Mixxx 2.5.6.</p>
-            <ul class="tags" aria-label="Mixxx API Bridge technologies"><li>Python</li><li>HTTP / MIDI</li><li>CoreMIDI</li></ul>
-            <div class="project-links"><a href="https://github.com/alexyyyander/mixxx-api-bridge">Repository <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/mixxx-api-bridge#end-to-end-verification">Verification notes <span aria-hidden="true">↗</span></a></div>
+            <p>Built a Python HTTP/MIDI sidecar that lets AI agents and MCP clients control Mixxx through its controller mapping API. The bridge handles deck and FX controls, capability discovery, and command acknowledgements while Mixxx owns real-time audio.</p>
+            <p class="project-detail">Implemented a HELLO/READY handshake, request-linked acknowledgements and state feedback, and a macOS CoreMIDI C helper. Documented a same-value crossfader read/write round trip on Mixxx 2.5.6 on September 1, 2026.</p>
+            <ul class="tags" aria-label="Mixxx API Bridge technologies"><li>Python</li><li>C / CoreMIDI</li><li>MIDI SysEx</li><li>HTTP API</li></ul>
+            <div class="project-links"><a href="https://github.com/alexyyyander/mixxx-api-bridge">Repository <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/mixxx-api-bridge/blob/main/docs/ARCHITECTURE.md">Architecture <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/mixxx-api-bridge/blob/main/docs/API.md">API reference <span aria-hidden="true">↗</span></a><a href="https://github.com/alexyyyander/mixxx-api-bridge#end-to-end-verification">Verification notes <span aria-hidden="true">↗</span></a></div>
           </article>
           <article class="project-card" aria-labelledby="defense-title">
             <p class="project-category">Agent safety / Developer tools</p>
